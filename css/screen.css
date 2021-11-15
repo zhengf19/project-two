@@ -17,9 +17,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
   color: #111;
-  background-color: #EEE;
+  background-color: #ECD9BA;
   font-size: 1.125em; /* 18/16 = 1.125 */
   line-height: 1.333333333333333em; /* 24/18 = 1.333333333333333 */
+}
+
+h1, h2, h3 {
+  padding-bottom: 0.6666666666666667em; /* 12/18 = 0.6666666666666667 */
 }
 
 h1 {
@@ -37,12 +41,53 @@ h3 {
   line-height: 1.066666666666667em; /* 24/22.5 = 1.066666666666667 */
 }
 
+p {
+  
+}
+
+ul {
+  list-style-type: square;
+
+}
+
+ol {
+  list-style-type: square;
+}
+
+
+
 /* Layout Styles */
 
 /* Modular Styles */
 
 #navigation a {
+  background-color: #333;
+  color: #D3C4BE;
+  display: block;
+  line-height: 0;
+  padding: 1em;
   text-decoration: none;
 }
 
+#navigation a:hover,
+#navigation a:active,
+#navigation a:focus,
+#about #nav-about {
+  background-color: #777;
+
+}
+
 /* State Styles */
+@media screen and (min-width: 420px){
+  #navigation ul {
+  display: flex;
+  }
+  #navigation ul > li {
+    flex: 1 0 auto;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+
+}
