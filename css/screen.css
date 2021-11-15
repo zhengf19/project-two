@@ -7,3 +7,42 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+/* Modular Scale: https://www.modularscale.com/?18&px&1.25 */
+/* Font Family: https://www.cssfontstack.com/Palatino */
+
+
+/* Base Styles */
+
+html {
+  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+  color: #111;
+  background-color: #EEE;
+  font-size: 1.125em; /* 18/16 = 1.125 */
+  line-height: 1.333333333333333em; /* 24/18 = 1.333333333333333 */
+}
+
+h1 {
+  font-size: 1.953111111111111em; /* 35.156/18 = 1.953111111111111 */
+  line-height: 1.137785868699511em; /* 40/35.156 = 1.137785868699511 */
+}
+
+h2 {
+  font-size: 1.5625em; /* 28.125/18 = 1.5625 */
+  line-height: 1.066666666666667em; /* 30/28.125 = 1.066666666666667 */
+}
+
+h3 {
+  font-size: 1.25em; /* 22.5/18 = 1.25 */
+  line-height: 1.066666666666667em; /* 24/22.5 = 1.066666666666667 */
+}
+
+/* Layout Styles */
+
+/* Modular Styles */
+
+#navigation a {
+  text-decoration: none;
+}
+
+/* State Styles */
