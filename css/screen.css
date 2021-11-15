@@ -42,7 +42,43 @@ h3 {
   line-height: 1.066666666666667em; /* 24/22.5 = 1.066666666666667 */
 }
 
-.directions, .ingredients {
+.schools ul {
+  font-size: 0.8em; /* 14.4/18 = 0.8 */
+  padding-left: 1em;
+  list-style-type: square;
+}
+
+.jobs ul {
+  font-size: 0.8em; /* 14.4/18 = 0.8 */
+  padding-left: 1em;
+  list-style-type: square;
+}
+
+.activities ul {
+  font-size: 0.8em; /* 14.4/18 = 0.8 */
+  margin-left: 1em;
+  list-style-type: square;
+}
+
+.achievements ul {
+  font-size: 0.8em; /* 14.4/18 = 0.8 */
+  margin-left: 1em;
+  list-style-type: square;
+}
+
+#education  {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-bottom: 0.5em; /* 9/18 = 0.5 */
+}
+
+.directions {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding-bottom: 0.5em; /* 9/18 = 0.5 */
+}
+
+.ingredients {
   list-style-type: square;
   list-style-position: inside;
   padding-bottom: 0.5em; /* 9/18 = 0.5 */
@@ -62,6 +98,7 @@ h3 {
   line-height: 0;
   padding: 1em;
   text-decoration: none;
+
 }
 
 #navigation a:hover,
@@ -90,8 +127,30 @@ figure {
     flex: 1 0 auto;
   }
 
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.3333333333333333; /* 6/18 = 0.3333333333333333 */
+  }
+
 }
 
-@media screen and (min-width: 800px) {
-
+@media screen and (min-width: 1200px) {
+  figure {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    gap: 12px;
+  }
+  figcaption {
+    position: static;
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
