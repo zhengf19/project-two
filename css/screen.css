@@ -23,6 +23,7 @@ html {
 }
 
 h1, h2, h3 {
+  padding-top: 0.6666666666666667em; /* 12/18 = 0.6666666666666667 */
   padding-bottom: 0.6666666666666667em; /* 12/18 = 0.6666666666666667 */
 }
 
@@ -41,18 +42,12 @@ h3 {
   line-height: 1.066666666666667em; /* 24/22.5 = 1.066666666666667 */
 }
 
-p {
-  
-}
-
-ul {
+.directions, .ingredients {
   list-style-type: square;
-
+  list-style-position: inside;
+  padding-bottom: 0.5em; /* 9/18 = 0.5 */
 }
 
-ol {
-  list-style-type: square;
-}
 
 
 
@@ -75,6 +70,15 @@ ol {
 #about #nav-about {
   background-color: #777;
 
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+figure {
+  position: relative;
 }
 
 /* State Styles */
