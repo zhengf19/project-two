@@ -66,22 +66,19 @@ h3 {
   list-style-type: square;
 }
 
-#education  {
-  list-style-type: square;
-  list-style-position: inside;
-  padding-bottom: 0.5em; /* 9/18 = 0.5 */
-}
 
 .directions {
   list-style-type: decimal;
   list-style-position: inside;
   padding-bottom: 0.5em; /* 9/18 = 0.5 */
+  padding-left: 0.5em; /* 9/18 = 0.5 */
 }
 
 .ingredients {
   list-style-type: square;
   list-style-position: inside;
   padding-bottom: 0.5em; /* 9/18 = 0.5 */
+  padding-left: 0.5em; /* 9/18 = 0.5 */
 }
 
 
