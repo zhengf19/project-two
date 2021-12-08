@@ -44,7 +44,7 @@ h3 {
 }
 
 .about-me {
-  column-gap: 11px;
+  column-gap: 0.6666666666666667em; /*12/18 = 0.6666666666666667; */
   display: flex;
   flex-flow: row nowrap;
   padding-top: 1em;
@@ -54,26 +54,6 @@ h3 {
 .about-me h2 {
   flex: 0 1 100%;
 
-}
-
-.pic img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.pic {
-  column-gap: 11px;
-  display: flex;
-  flex-flow: row nowrap;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  /* margin-left: 1em; */
-}
-
-.pic h2 {
-  flex: 0 1 100%;
-  padding-right: 9em;
 }
 
 ul.schools {
@@ -149,8 +129,31 @@ figure {
   position: relative;
 }
 
+.pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pic {
+  column-gap: 0.6666666666666667em; /*12/18 = 0.6666666666666667; */
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /* margin-left: 1em; */
+}
+
+.pic h2 {
+  flex: 0 1 100%;
+  padding-right: 9em;
+}
+
+
+
 /* State Styles */
-@media screen and (min-width: 420px) {
+/* 420 / 18 = 23.33333333333333 */
+@media screen and (min-width: 23.33333333333333em) {
   #navigation ul {
     display: flex;
   }
@@ -176,7 +179,7 @@ figure {
   }
 
   .pic {
-    column-gap: 11px;
+    column-gap: 0.6666666666666667em; /*12/18 = 0.6666666666666667; */
     display: flex;
     flex-flow: row nowrap;
     padding-top: 1em;
@@ -194,18 +197,43 @@ figure {
   }
 
 }
-
-@media screen and (min-width: 1200px) {
+/* 1200 / 18 = 66.66666666666667 */
+@media screen and (min-width: 66.66666666666667em) {
   figure {
     display: grid;
     grid-template-columns: 4fr 3fr;
     grid-template-rows: auto;
-    grid-gap: 12px;
-    gap: 12px;
+    grid-gap: 0.6666666666666667em; /*12/18 = 0.6666666666666667; */
+    gap: 0.6666666666666667em; /*12/18 = 0.6666666666666667; */
   }
+
   figcaption {
     position: static;
     grid-column: 2;
     grid-row: 1;
   }
+  .pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .pic {
+    column-gap: 0.6666666666666667em; /*12/18 = 0.6666666666666667; */
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* margin-left: 1em; */
+  }
+
+  .pic h2 {
+    flex: 0 1 100%;
+    padding-right: 4em;
+  }
+
+  .pic figcaption {
+    position: relative;
+  }
+
 }
