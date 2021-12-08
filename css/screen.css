@@ -20,6 +20,7 @@ html {
   background-color: #ECD9BA;
   font-size: 1.125em; /* 18/16 = 1.125 */
   line-height: 1.333333333333333em; /* 24/18 = 1.333333333333333 */
+  padding: 1em;
 }
 
 h1, h2, h3 {
@@ -42,27 +43,27 @@ h3 {
   line-height: 1.066666666666667em; /* 24/22.5 = 1.066666666666667 */
 }
 
-.schools ul {
+ul.schools {
   font-size: 0.8em; /* 14.4/18 = 0.8 */
-  padding-left: 1em;
+  /* padding-left: 20px; */
   list-style-type: square;
 }
 
-.jobs ul {
+ul.jobs {
   font-size: 0.8em; /* 14.4/18 = 0.8 */
-  padding-left: 1em;
+  /* padding-left: 20px; */
   list-style-type: square;
 }
 
-.activities ul {
+ul.activities {
   font-size: 0.8em; /* 14.4/18 = 0.8 */
-  margin-left: 1em;
+  /* margin-left: 20px; */
   list-style-type: square;
 }
 
-.achievements ul {
+ul.achievements {
   font-size: 0.8em; /* 14.4/18 = 0.8 */
-  margin-left: 1em;
+  /* margin-left: 1em; */
   list-style-type: square;
 }
 
