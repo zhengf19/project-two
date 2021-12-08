@@ -152,8 +152,8 @@ figure {
 
 
 /* State Styles */
-/* 420 / 18 = 23.33333333333333 */
-@media screen and (min-width: 23.33333333333333em) {
+/* 420 / 16 = 26.25 */
+@media screen and (min-width: 26.25em) {
   #navigation ul {
     display: flex;
   }
@@ -197,8 +197,8 @@ figure {
   }
 
 }
-/* 1200 / 18 = 66.66666666666667 */
-@media screen and (min-width: 66.66666666666667em) {
+/* 1200 / 16 = 75 */
+@media screen and (min-width: 75em) {
   figure {
     display: grid;
     grid-template-columns: 4fr 3fr;
