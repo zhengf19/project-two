@@ -169,6 +169,30 @@ figure {
     padding: 0.3333333333333333; /* 6/18 = 0.3333333333333333 */
   }
 
+  .pic img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .pic {
+    column-gap: 11px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* margin-left: 1em; */
+  }
+
+  .pic h2 {
+    flex: 0 1 100%;
+    padding-right: 0.5em;
+  }
+
+  .pic figcaption {
+    position: relative;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
