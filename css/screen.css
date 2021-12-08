@@ -15,12 +15,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Base Styles */
 
 html {
-  font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
   color: #111;
   background-color: #ECD9BA;
   font-size: 1.125em; /* 18/16 = 1.125 */
   line-height: 1.333333333333333em; /* 24/18 = 1.333333333333333 */
-  padding: 1em;
+  padding: 1em 1em 1em 1em;
 }
 
 h1, h2, h3 {
@@ -41,6 +41,39 @@ h2 {
 h3 {
   font-size: 1.25em; /* 22.5/18 = 1.25 */
   line-height: 1.066666666666667em; /* 24/22.5 = 1.066666666666667 */
+}
+
+.about-me {
+  column-gap: 11px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.about-me h2 {
+  flex: 0 1 100%;
+
+}
+
+.pic img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pic {
+  column-gap: 11px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /* margin-left: 1em; */
+}
+
+.pic h2 {
+  flex: 0 1 100%;
+  padding-right: 8.5em;
 }
 
 ul.schools {
@@ -117,9 +150,9 @@ figure {
 }
 
 /* State Styles */
-@media screen and (min-width: 420px){
+@media screen and (min-width: 420px) {
   #navigation ul {
-  display: flex;
+    display: flex;
   }
   #navigation ul > li {
     flex: 1 0 auto;
